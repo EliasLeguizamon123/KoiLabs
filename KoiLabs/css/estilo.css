@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  height: 100%
+}
+body{
+  width: 100%;
+}
+.img-Contenedor{
+  background-image: url(../img/fish.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.img-Interior{
+  text-align: center;
+  position: absolute;
+  color: white;
+  height: auto;
+  margin-top: 200px;
+}
+.titulo{
+  font-size: 7em;
+  font-family: "Roboto Condensed";
+  color: white;
+  text-align: center;
+}
+.slogan{
+  color: white;
+  margin-top: -17px;
+  font-family: "Roboto Condensed";
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: 400;
+}
+.menu{
+  padding: 0;
+  height: auto;
+  text-align: center;
+}
+.menu li{
+  display: inline;
+
+}
+.menu li a{
+  font-family: "Roboto Condensed";
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  float: none;
+}
