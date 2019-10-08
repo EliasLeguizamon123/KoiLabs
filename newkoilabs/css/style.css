@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
 body{
 	background: #eeeeee;
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -35,7 +36,7 @@ header{
 .principal{
 	background: red;
 	height: 90vh;
-	background: url(../images/baner.jpg)no-repeat center center fixed;
+	background: url(https://media.giphy.com/media/VyAwMGQB7q3oA/giphy.gif)no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -121,7 +122,20 @@ footer h1{
 .col-xs-4{
 	text-align: center;
 }
-
+.texto-derecha{
+	text-align: right;
+}
+.copy{
+	padding-top: 30px;
+	text-align: left;
+}
+.botonera button{
+	background-color: transparent;
+	cursor: pointer;
+	border-radius: 10px;
+	border-color: #666666;
+	color: grey;
+}
 
 /*@media only screen
 and (min-device-width : 414px)
@@ -162,11 +176,4 @@ footer{
 	padding-top: 10px;
 }
 
-}
-.texto-derecha{
-	text-align: right;
-}
-.copy{
-	padding-top: 30px;
-	text-align: left;
 }
