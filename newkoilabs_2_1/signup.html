@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  	<!-- codigo de colores y estilos escrito por nosotros -->
+  	<link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Sign in</title>
+  	<!-- Tipografia openSans -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+  	<!-- esto es para que el navegador se de cuenta cuando estamos en un celuar o tableta-->
+  	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  	<link rel="shortcut icon" type="image/x-icon" href="images/iconop2.ico" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  </head>
+  <body class="conteiner">
+    <br>
+      <div class="center-xs tableCenter fondo">
+        <img class=""width="50px" src="images/iconop1.ico">
+        <br>
+        <h2 class="">Sign in to Koi Labs</h2>
+      </div>
+      <br>
+      <br>
+      <article class="seccion row middle-xs center-xs content">
+        <div class="col-lg-3">
+          <content class="box cajita " style="width: 20px;">
+            <div class="card animated slideInDown">
+                <nav class="main-nav">
+                </nav>
+              <article class="body">
+                  <div class="tableCenter">
+                    <p>Email</p>
+                      <input type="email" name="email" placeholder="Addres Email" id="email">
+                      <br>
+                      <a href="#" class="p-3">Or Sing Up</a>
+                      <br>
+                      <br>
+                      <p>Password</p>
+                      <input type="password" name="pass" placeholder="Password" id="pass">
+                      <br>
+                      <br>
+                      <a href="index.html" class="btn btn-outline-secondary">Back</a>
+                      <a class="btn btn-outline-secondary" onclick="enviar()">Check In</a>
+                      <br>
+                      <p id="login"></p>
+                 </div>
+              </article>
+            </div>
+          </content>
+        </div>
+      </article>
+  <nav style="align-items: baseline;">
+    <small class="copi">COPYRIGHT BY ©
+      <a target="_blank" href="https://github.com/EliasLeguizamon123">ELÍAS LEGUIZAMÓN</a>
+    </small>
+  </nav>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      var displayName = user.displayName;
+      var email = user.email;
+      var emailVerified = user.emailVerified;
+      var photoURL = user.photoURL;
+      var isAnonymous = user.isAnonymous;
+      var uid = user.uid;
+      var providerData = user.providerData;
+      document.getElementById('login').innerHTML = "logueado "+user.email;
+    } else {
+      document.getElementById('login').innerHTML = "no logueado";
+    }
+  });
+</script>
+  </body>
+</html>

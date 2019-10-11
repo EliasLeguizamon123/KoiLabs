@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+body{
+	background: #eeeeee;
+	font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+.logo{
+	width: 40px;
+}
+
+.botonera li{
+	display: inline-block;
+	margin-left: 8px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.botonera li a{
+	color: #666;
+
+}
+.botonera li a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+
+header{
+	background: white;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	position: fixed;
+	width: 100%;
+	z-index: 34242;
+}
+
+.principal{
+	background: red;
+	height: 90vh;
+	background: url(https://media.giphy.com/media/VyAwMGQB7q3oA/giphy.gif)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.vertical-centered-text {
+  -ms-display: flex;
+  display: flex;
+  /* alineacion vertical */
+  align-items: center;
+   /* alineacion horizontal */
+  justify-content: center;
+}
+
+.cta{
+	text-align: center;
+}
+h1{
+	font-weight: 700;
+	font-size: 50px;
+	color: rgba(255,255,255,.7);
+}
+
+.orange{
+
+	background: #FFB347;
+}
+
+.nosotros{
+	width: 100%;
+	height: 50vh;
+	text-align: center;
+	padding-top: 150px;
+}
+.nosotros h1{
+	font-weight: 100;
+}
+.servicios{
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 50px;
+}
+.servicios img{
+	width: 40%;
+	text-align: center;
+}
+
+.servicios h1{
+	color: #666;
+	font-weight: 100;
+}
+.servicios .images{
+	padding-top: 30px;
+}
+
+.images .col-md-3{
+	padding-top: 20px;
+
+}
+.social{
+	text-align: center;
+}
+.social img{
+	width: 30%;
+	text-align: center;
+}
+
+footer{
+	background: #adad9a;
+	height: 50vh;
+	padding-top: 30px;
+}
+footer h1{
+	text-align: center;
+	font-weight: 100;
+}
+
+#home {
+	color: white;
+}
+.col-xs-4{
+	text-align: center;
+}
+.texto-derecha{
+	text-align: right;
+}
+.copy{
+	padding-top: 30px;
+	text-align: left;
+}
+.botonera button{
+	background-color: transparent;
+	cursor: pointer;
+	border-radius: 10px;
+	border-color: #666666;
+	color: grey;
+}
+.center-col{
+	text-align: center;
+	align-items: center;
+	background-color: red;
+	padding-top: 100px;
+}
+.tittle{
+	font-size: 2em;
+	margin-top: 0;
+}
+.main-header{
+	background-color:#121420;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 4px;
+}
+.body{
+	padding: 60px 15px;
+}
+.nav-link{
+	color:#E5FFDE;
+	text-decoration: none;
+	width: 33%;
+	display: inline-block;
+}
+.text-center{
+	text-align: center;
+}
+.red-text{
+	color: #DA2C38;
+}
+.main-container{
+	min-height:100vh;
+}
+.product img{
+	width: 140px;
+}
+.product h3{
+	font-size: 1.7em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.card{
+	border-radius: 1px;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.text-Box{
+	background: #FFFFFF;
+	border: 0;
+	color : #C0C0C0;
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 370px;
+}
+.buton-Box{
+	border-radius: 5px;
+}
+.ubuntu-text{
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+.ubuntu-textW{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #FFFFFF;
+}
+.tableCenter{
+	text-align: center;
+}
+.fondo{
+	background: rgba(0,0,0,0);
+}
+.cajita{
+	padding-left: 250px;
+	padding-right: 250px;
+}
+.container{
+	flex-direction: column-reverse;
+}
+.imagen{
+
+}
+.fa-1x {
+font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+.dark-pink-text {
+color: #AC003A;
+}
+.dark-amber-text {
+color: #ff6f00;
+}
+.dark-teal-text {
+color: #004d40;
+}
+.botoncito{
+	background-image: images/app.svg;
+}
+.cuerpesito{
+	width: 100%;
+}
+.body-sign{
+	weight: 50px;
+}
+.texto-derecha{
+	text-align: right;
+}
+.conteiner{
+	width: 100%;
+	height: auto;
+}
+/*@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) { }
+@media only screen and (min-width: 324px) and (max-width: 736px) {*/
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) {
+  /* iPhone only */
+  /* Styles */
+  .off {
+    display: none !important;
+  }
+  .on {
+    display: block !important;
+  }
+  .col-md-2 {
+    width: 100%;
+  }
+  .social img{
+  	width: 100%;
+  }
+  .botonera li a {
+    font-size: 13px;
+}
+.nosotros{
+	height: 400px;
+	overflow: hidden;
+	padding-top: 15px;
+}
+#home{
+	padding-top: 65px;
+}
+
+h1{
+	font-size: 30px;
+}
+
+footer{
+	padding-top: 10px;
+}
+.conteiner{
+	height: auto; /*if more info comes on the page, it will stretch down*/
+	margin: 0 auto; /*this will cause the div to be in the center*/
+}
+
+}
