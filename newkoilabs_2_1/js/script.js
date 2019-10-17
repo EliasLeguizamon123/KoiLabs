@@ -1,4 +1,5 @@
 console.log('Hola mundo');
+
 var firebaseConfig = {
   apiKey: "AIzaSyDZzfhyVb7SJK6nfJVSYa5juCKSu7iIpuY",
   authDomain: "koilabs-a8148.firebaseapp.com",
@@ -21,4 +22,13 @@ function enviar(){
   });
   alert('Usuario creado correctamente');
   //location.href="index.html"
+}
+function acceso(){
+  var emailA = document.getElementById('emailA').value;
+  var passA = document.getElementById('passA').value;
+  firebase.auth().signInWithEmailAndPassword(emailA, passA).catch(function(error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    alert(errorMessage);
+  });
 }
